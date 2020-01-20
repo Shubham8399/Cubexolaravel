@@ -38,5 +38,7 @@ class UserRegister extends Controller
             $password = $request->input('password');
             $token=sha1(time());
 
+             $data=array('first_name'=>$first_name,"last_name"=>$last_name,"mobile"=>$mobile,"email"=>$email,"password"=>$password,"token"=>$token);
+
    }
 }
